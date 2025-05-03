@@ -15,4 +15,12 @@
         android:text="Frase aquí"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Continuar con el aprendizaje →" />
+
 </LinearLayout>

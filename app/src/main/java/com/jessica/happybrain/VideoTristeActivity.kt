@@ -1,8 +1,10 @@
 package com.jessica.happybrain
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.Button
 import android.widget.MediaController
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +25,13 @@ class VideoTristeActivity : AppCompatActivity() {
         mediaController.setAnchorView(videoView)
 
         videoView.start()
+
+        val btnContinuar = findViewById<Button>(R.id.btnContinuar)
+        btnContinuar.setOnClickListener {
+            val intent = Intent(this, SeleccionMateriaActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
 

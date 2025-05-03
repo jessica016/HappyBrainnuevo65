@@ -1,7 +1,9 @@
 package com.jessica.happybrain
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.happybrain.R
@@ -19,6 +21,13 @@ class InfoFelizActivity : AppCompatActivity() {
             Cuando estás feliz, tu cerebro está más receptivo a nueva información 
             y tu motivación aumenta. 🧠✨
         """.trimIndent()
+
+        val btnContinuar = findViewById<Button>(R.id.btnContinuar)
+        btnContinuar.setOnClickListener {
+            val intent = Intent(this, SeleccionMateriaActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
 
